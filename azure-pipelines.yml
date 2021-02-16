@@ -22,11 +22,11 @@ jobs:
         python.version: '3.5'
       Python36:
         python.version: '3.6'
-        
-steps:
-- task: UsePythonVersion@0
+
+  Steps:
+   task: UsePythonVersion@0
   inputs:
-    versionSpec: '3.6'
+    versionSpec: '$(python.version)'
 - task: CmdLine@2
   inputs:
     script: |
