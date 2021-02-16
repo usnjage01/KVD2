@@ -22,13 +22,13 @@ jobs:
         python.version: '3.5'
       Python36:
         python.version: '3.6'
-  Steps:
--  task: UsePythonVersion@0
-  inputs:
-    versionSpec: '$(python.version)'
--  task: CmdLine@2
-  inputs:
-    script: |
-      javac jj.java
-      
-      java jj
+    Steps:
+    -  task: UsePythonVersion@0
+       inputs:
+       versionSpec: '$(python.version)'
+    -  task: CmdLine@2
+       inputs:
+         script: |
+         javac jj.java
+           
+         java jj
