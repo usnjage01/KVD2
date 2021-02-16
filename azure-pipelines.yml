@@ -22,7 +22,6 @@ jobs:
         python.version: '3.5'
       Python36:
         python.version: '3.6'
-
   Steps:
    task: UsePythonVersion@0
   inputs:
