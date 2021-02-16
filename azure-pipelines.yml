@@ -31,4 +31,4 @@ jobs:
            script: |
            javac jj.java
 
-            java jj 
+            java jj : 
