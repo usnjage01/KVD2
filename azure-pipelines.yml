@@ -23,10 +23,10 @@ jobs:
       Python36:
         python.version: '3.6'
   Steps:
-   task: UsePythonVersion@0
+-  task: UsePythonVersion@0
   inputs:
     versionSpec: '$(python.version)'
-- task: CmdLine@2
+-  task: CmdLine@2
   inputs:
     script: |
       javac jj.java
